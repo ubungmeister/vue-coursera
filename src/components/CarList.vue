@@ -6,17 +6,20 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { ref } from "vue";
 import { evRangeData } from "@/dummyData/carlist.js";
-import SingleCar from "./SingleCar.vue";
+import SingleCar from "@/components/SingleCar.vue";
+import { CarType } from "@/types/carType";
+import {validCars} from "@/utilities/validCars";
 export default {
   name: "CarList",
   components: {
     SingleCar,
   },
   setup() {
-    const cars = ref(evRangeData);
+    const carsList = validCars(evRangeData)
+    const cars = ref<CarType[]>(carsList);
     return { cars };
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <div className="mx-auto border border-gray-300  rounded-lg max-w-md">
     <div className="w-[300px] h-[200px] mx-auto">
-      <!-- <img src="{{car.imgSrc}}" alt="{car.name}" width="{300}" height="{200}" /> -->
+      <img :src="`/public/${car.imgSrc}`" alt="{car.name}" width="{300}" height="{200}" />
     </div>
     <h2 className="text-center text-[18px] italic">{{ car.name }}</h2>
     <div className="grid grid-cols-2 gap-2 mx-4 text-gray-700 mt-2 ">
@@ -31,11 +31,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "SingleCar",
-  props: {
-    car: Object,
-  },
-};
+<script lang="ts" setup>
+import { CarType } from "@/types/carType";
+import { defineProps } from "vue";
+
+const {car} = defineProps<{
+  car: CarType;
+}>();
 </script>
