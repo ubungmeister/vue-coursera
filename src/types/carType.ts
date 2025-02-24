@@ -2,6 +2,7 @@ export interface CarType {
     /**
      * Name of the car unique
      */
+    id: number;
     name: string;
   
     /**

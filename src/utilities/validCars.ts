@@ -2,6 +2,7 @@ import {z} from 'zod'
 import { CarType } from "@/types/carType"
 
 const carSchema = z.object({
+    id: z.number(),
     name: z.string(),
     partOfYear: z.object({
         summer: z.number(),

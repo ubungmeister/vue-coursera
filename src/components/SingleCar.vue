@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+import { CarType } from "@/types/carType";
+import { defineProps } from "vue";
+
+const {car} = defineProps<{
+  car: CarType;
+}>();
+</script>
+
 <template>
   <div className="mx-auto border border-gray-300  rounded-lg max-w-md">
     <div className="w-[300px] h-[200px] mx-auto">
@@ -30,12 +39,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-import { CarType } from "@/types/carType";
-import { defineProps } from "vue";
-
-const {car} = defineProps<{
-  car: CarType;
-}>();
-</script>

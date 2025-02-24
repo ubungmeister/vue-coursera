@@ -1,5 +1,7 @@
+// @ts-nocheck
 export const evRangeData = [
   {
+    id:1,
     name: "Tesla Model 3",
     partOfYear: {
       summer: 1,
@@ -22,6 +24,7 @@ export const evRangeData = [
     imgSrc: "/cars/Tesla.jpeg",
   },
   {
+    id:2,
     name: "Nissan Leaf",
     partOfYear: {
       summer: 1,
@@ -44,6 +47,7 @@ export const evRangeData = [
     imgSrc: "/cars/Nissan.jpg",
   },
   {
+    id:3,
     name: "BMW i3",
     partOfYear: {
       summer: 1,
@@ -66,6 +70,7 @@ export const evRangeData = [
     imgSrc: "/cars/BMW.jpg",
   },
   {
+    id:4,
     name: "Renault Zoe",
     partOfYear: {
       summer: 1,
@@ -88,6 +93,7 @@ export const evRangeData = [
     imgSrc: "/cars/Renault.webp",
   },
   {
+    id:5,
     name: "Volkswagen ID.3",
     partOfYear: {
       summer: 1,
@@ -110,6 +116,7 @@ export const evRangeData = [
     imgSrc: "/cars/VW.webp",
   },
   {
+    id:6,
     //@ts-expect-error intentionaly broken data
     name: ["false"],
     partOfYear: {
